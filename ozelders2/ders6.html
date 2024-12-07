@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>JS DERS-6</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <script>
+            /*
+            const date = new Date();
+
+            console.log("Yıl:", date.getFullYear());     // Yılı alır (örn. 2024)
+            console.log("Ay:", date.getMonth() + 1);    // Ayı alır (0-11 arasında olduğu için +1 yapılır)
+            console.log("Gün:", date.getDate());        // Gün (ayın günü)
+            console.log("Saat:", date.getHours());      // Saat
+            console.log("Dakika:", date.getMinutes());  // Dakika
+            console.log("Saniye:", date.getSeconds());  // Saniye
+            */
+
+            const date1 = new Date("2024-12-07");
+            const date2 = new Date("2024-12-31");
+
+            const difference = date2 - date1; // İki tarih arasındaki fark (milisaniye cinsinden)
+            const daysDifference = difference / (1000 * 60 * 60 * 24); // Milisaniyeden güne çevirme
+
+            console.log("İki tarih arasındaki gün farkı:", daysDifference);
+
+
+        </script>
+    </body>
+</html>

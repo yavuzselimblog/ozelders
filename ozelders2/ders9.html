@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>JS DERS-9</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <p id="metin"></p>
+        <script>
+
+            /*
+                dizilerde ilk eleman 0 ile başlar
+                tüm elemanları göstermek istiyorsan döngü şart
+                belirli elemanı almak istiyosan index numarası 
+                [1] = 2.elemanı alır
+                [0] = 1.eleman
+            */ 
+
+            let sayilar = [1,15,25,35,50,100];
+            let sonuc   = document.getElementById('metin');
+            
+            let deger   = '';
+            sayilar.forEach((sayi, index) => {
+               deger += sayi + ',';
+            });
+            sonuc.innerHTML = deger;
+
+
+            /*let sayi1   = sayilar[2];
+            let sayi2   = sayilar[5];
+            alert(sayi1 + sayi2);*/
+        </script>
+    </body>
+</html>

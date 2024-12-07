@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>JS DERS-8</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <b>Metin Giriniz</b>
+        <input type="text" name="metin" />
+        <button onclick="tikla();">GÖNDER</button>
+
+        <hr />
+        <p id="sonuc"></p>
+
+        <script>
+            function tikla(){
+                let metin = $("input[name=metin]").val();
+                let deger = document.getElementById('sonuc');
+                deger.innerHTML = metin;
+            }
+        </script>
+
+
+    </body>
+</html>
