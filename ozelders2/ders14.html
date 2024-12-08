@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>JS DERS-14</title>
+        <meta charset="UTF-8">
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <button onclick="yenile()">YENİLE</button>
+        <button onclick='yonlendirme("https://yavuz-selim.com")'>GOOGLE GİT</button>
+        <script>
+            /*function yonlendirme(){
+                window.location.href = 'https://google.com';
+            }*/
+
+            function yonlendirme(parametre1){
+                window.location.href = parametre1;
+            }
+
+            function yenile(){
+                window.location.reload()
+            }
+        </script>
+    </body>
+</html>
