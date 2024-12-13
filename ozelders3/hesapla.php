@@ -15,7 +15,6 @@
                         echo $sayi1 / $sayi2;
                     }
 
-
                 }
                
 

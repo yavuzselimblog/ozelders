@@ -2,7 +2,7 @@
 
 $sayi1 = 20;
 $sayi2 = 50;
-$islem = "-";
+$islem = "+";
 
 if($islem == '+'){
     echo $sayi1 + $sayi2;

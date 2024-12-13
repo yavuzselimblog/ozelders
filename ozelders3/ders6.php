@@ -7,7 +7,7 @@
  */
 //$meyveler = array('elma','armut','karpuz','kiraz');
 
-$sayilar = array(1,2,54,656,21321,9945);
+$sayilar = array(1,2,24,656,21321,9945);
 print_r($sayilar);
 $toplam  = $sayilar[2] + $sayilar[5];
 echo $toplam;
