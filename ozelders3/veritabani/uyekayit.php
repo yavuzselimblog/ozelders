@@ -41,8 +41,8 @@
                                             echo '<div class="alert alert-danger">Kullanıcı adı zaten kayıtlı...</div>';
                                         }else{
 
-                                            $ekle = $db->prepare("INSERT INTO uyeler SET kadi=?,sifre=?,aciksifre=?");
-                                            $ekle->execute([$kadi,$kriptolu,$sifre]);
+                                            $ekle = $db->prepare("INSERT INTO uyeler SET kod=?,kadi=?,sifre=?,aciksifre=?");
+                                            $ekle->execute([uniqid(),$kadi,$kriptolu,$sifre]);
                                             if($ekle){
                                                 echo '<div class="alert alert-success">Kayıt başarılı...</div>';
                                             }else{

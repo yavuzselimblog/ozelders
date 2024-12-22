@@ -17,10 +17,14 @@ $dbhost = 'localhost';
 $dbuser = 'root';
 
 try{
+
     $db = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8"
     ,$dbuser,$dbpass);
+
 }catch(PDOException $hata){
+
     print_r($hata->getMessage());
+    
 }
 
 
